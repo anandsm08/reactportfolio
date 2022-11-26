@@ -1,10 +1,12 @@
 import Head from "next/head";
 
 import { BsMoonStarsFill } from "react-icons/bs";
-import { AiFillBehanceCircle, AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
+import { AiFillBehanceCircle, AiFillGithub, AiFillLinkedin, AiFillMail,AiFillCode } from "react-icons/ai";
 import { FaDiscord } from "react-icons/fa";
+import { FiArrowUpRight } from "react-icons/fi";
+
 import Image from "next/image";
-import yoo from "../public/yoo.png";
+import hero from "../public/yoo.png";
 
 export default function Home() {
   return (
@@ -16,18 +18,13 @@ export default function Home() {
       </Head>
 
       <main>
-        <section className="min-h-screen ">
+        <section className="min-h-screen bg-sky-100 ">
 
-          {/* <div className=" flex  justify-between items-center">
-            
-          </div> */}
-          <nav className="py-5 mb-10 flex justify-between ">
+        
+          <nav className="py-5 mb-10 flex justify-between  ">
           <h1 className=" text-lg ml-20 font-akira ">AM</h1>
             <ul className="  flex  mr-5 items-center ">
-            
-           
-           
-              <li className="ml-4   text-md ">Work.</li>
+              <li className="ml-4   text-md "><a href="#">Work</a></li>
               <li className=" ml-4 text-md ">
                 <a href="#">Resume</a>
               </li>
@@ -38,32 +35,165 @@ export default function Home() {
             </ul>
           </nav>
 
+          
+
+            <div className=" relative mx-auto  mt-44 py-20 h-80 w-80 justify-center">
+              <Image src={hero} alt=""  className="bg-gradient-to-b from-teal-300  to-gray-100 rounded-full " layout="fill" objectFit="cover" />
+            </div>
             <div className=" pt-10 py-10 px-20 text-center ">
-                <h2 className="font-bold text-4xl font-mono text-teal-600 ">Anand Menon</h2>
-                <h3 className="font-semibold text-xl  "> Learning Enthusiast </h3>
-                <p className= " font-medium text-lg text-slate-500"> *NOT* a Frontend Developer. </p>
-                <p className= " font-medium text-md text-slate-500"> Connect me down and let&apos;s tinker around. </p>
+                
+                <h2 className="font-bold text-4xl font-mono text-teal-600 mt-10 ">Anand Menon</h2>
+                <h3 className="font-semibold text-2xl  "> Learning Enthusiast | Budding Flutter Developer  </h3>
+
+                
+                <p className= " font-medium text-lg text-slate-500"> Connect me down and let&apos;s tinker around. </p>
             </div>
 
-            <div className=" flex  justify-center ml-10 mr-10  gap-4 text-3xl text-gray-700 ">
+            <div className=" flex  justify-center ml-10 mr-10  gap-4 text-4xl  ">
               <a href="https://linkedin.com/in/anandsm08"><AiFillLinkedin /></a>
               <a href="https://github.com/anandsm08"><AiFillGithub /></a>
               <a href="mailto:codinand@gmail.com"><AiFillMail /></a>
               <a href="https://discordapp.com/users/264769172104413196"><FaDiscord /></a>
             </div>
 
-            <div className=" relative mx-auto  mt-20 py-20 h-80 w-80">
-              <Image src={yoo} alt=""  className="bg-gradient-to-b from-slate-400  to-white rounded-full" layout="fill" objectFit="cover"/>
+            
+        </section>
+        
+
+        <section class="about-me" className=" min-h-screen items-center justify-between bg-gradient-to-b from-sky-100 to-sky-200">
+            <div className="">
+            <div className="flex justify-between">
+              <div className="mx-10 justify-center ">
+                <h2 className="text-4xl font-mono py-10 px-28">Who am I?</h2>
+                <p className="text-xl font-medium  px-32">Namaste! Myself Anand Menon </p>
+                <p className="text-xl font-medium ml-32">I&apos;ve been learning, tinkering  and exploring various fields and would love to help the community by my contributions someday!. </p>
+                <p className="text-xl font-medium ml-32">Working on Flutter/Dart, Kotlin,C/C++. Currently learning Javascript,ReactJS,TailwindCSS to boost my development skills. </p>
+                
+              </div>
             </div>
+            <div className=" font-mono py-10 px-28 ml-10 text-gray-800 font-semibold">
+              <h2 className="text-2xl py-8">When and Where</h2>
+              <h3 className="text-xl underline ">2020-2024</h3>
+              <ul className="text-xl ml-10 py-2 list-disc" >
+                <li>Currently a Student at <a href="https://www.pce.ac.in" rel="noreferer"><strong>Pillai College of Engineerring(PCE),Navi Mumbai.</strong></a></li>
+                <li>Tech at Google Developers Student Clubs,PCE (2022-23).         </li>
+                
+              </ul>
+              <h3 className="text-xl underline ">2018-2020</h3>
+              <ul className="text-xl ml-10 py-2 list-disc" >
+                <li>Studied and completed my HSC from <a href="https://www.abhinav.ac.in" rel="noreferer"><strong>Abhinav Vidyalaya and Jr College,Thane.</strong></a></li>
+                <li>Participated and achieved Rank #3 for Robotic Arm at Nat&apos;l Science Day at GMRT (TIFR),Pune (2019) .        </li>
+                
+              </ul>
+            </div>
+            </div>            
         </section>
 
-          <section>
-            <div className="mx-10 ">
-              <h2 className="text-3xl font-mono">About</h2>
-              <p className="font-medium">Hey there! Anand this side, I love learning </p>
+        <section className="min-h-screen bg-gradient-to-b from-sky-200 to-sky-600" class="projects">
+          <div clasName="mx-10 justify-center">
+          <h2 className="text-4xl font-mono py-10 px-28">Projects</h2>
+          </div>
+          <div className="flex  px-20 justify-start sm:flex">
+            <div className="rounded-lg h-70 w-60 mx-10 ">
+            <div class="relative  py-6 px-6 rounded-3xl w-64 my-4 shadow-xl  backdrop-blur-lg bg-slate-300">
+            <div class=" text-white flex items-center absolute rounded-lg py-2 px-2 shadow-xl bg-green-500 right-4 -top-6">
+              <p>NEW</p>
             </div>
+            <div class="mt-6">
+                <p class="text-xl font-semibold my-2">Banking App UI</p>
+                <div class="flex space-x-2 text-black text-sm py-2">
+                  <AiFillCode className="h-6 w-6"></AiFillCode>
+                     <p className="text-lg">Flutter</p> 
+                </div>
+                
+                <div class="border-t-2 "></div>
+                
+                <div class="flex justify-end py-2 ">
+                    <div class="my-2">
+                        <div class="flex space-x-2 align-middle rounded-lg bg-white mr-4">
+                            <AiFillGithub className="h-8 w-8"></AiFillGithub>
+                        </div>
+                    </div>
+                     <div class="my-2 rounded-lg bg-white">
+                        <FiArrowUpRight className="h-8 w-8"></FiArrowUpRight>
+                    </div>
+                </div>
+            </div>
+            </div>
+           </div>
 
-          </section>
+           <div className="rounded-lg h-70 w-60 mx-10 ">
+            <div class="relative  py-6 px-6 rounded-3xl w-64 my-4 shadow-xl  backdrop-blur-lg bg-slate-300">
+            <div class=" text-white flex items-center absolute rounded-lg py-2 px-2 shadow-xl bg-green-500 right-4 -top-6">
+              <p>NEW</p>
+            </div>
+            <div class="mt-6">
+                <p class="text-xl font-semibold my-2">Banking App UI</p>
+                <div class="flex space-x-2 text-black text-sm py-2">
+                  <AiFillCode className="h-6 w-6"></AiFillCode>
+                     <p className="text-lg">Flutter</p> 
+                </div>
+                
+                <div class="border-t-2 "></div>
+                
+                <div class="flex justify-end py-2 ">
+                    <div class="my-2">
+                        <div class="flex space-x-2 align-middle rounded-lg bg-white mr-4">
+                            <AiFillGithub className="h-8 w-8"></AiFillGithub>
+                        </div>
+                    </div>
+                     <div class="my-2 rounded-lg bg-white">
+                        <FiArrowUpRight className="h-8 w-8"></FiArrowUpRight>
+                    </div>
+                </div>
+            </div>
+            </div>
+           </div>
+
+           <div className="rounded-lg h-70 w-60 mx-10 ">
+            <div class="relative  py-6 px-6 rounded-3xl w-64 my-4 shadow-xl  backdrop-blur-lg bg-slate-300">
+            <div class=" text-white flex items-center absolute rounded-lg py-2 px-2 shadow-xl bg-green-500 right-4 -top-6">
+              <p>NEW</p>
+            </div>
+            <div class="mt-6">
+                <p class="text-xl font-semibold my-2">Banking App UI</p>
+                <div class="flex space-x-2 text-black text-sm py-2">
+                  <AiFillCode className="h-6 w-6"></AiFillCode>
+                     <p className="text-lg">Flutter</p> 
+                </div>
+                
+                <div class="border-t-2 "></div>
+                
+                <div class="flex justify-end py-2 ">
+                    <div class="my-2">
+                        <div class="flex space-x-2 align-middle rounded-lg bg-white mr-4">
+                            <AiFillGithub className="h-8 w-8"></AiFillGithub>
+                        </div>
+                    </div>
+                     <div class="my-2 rounded-lg bg-white">
+                        <FiArrowUpRight className="h-8 w-8"></FiArrowUpRight>
+                    </div>
+                </div>
+            </div>
+            </div>
+           </div>
+
+
+    </div>
+
+
+      
+
+
+
+
+
+
+
+
+
+            
+        </section>
 
 
       </main>
