@@ -1,8 +1,8 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-1.Clone the Repository. 
-2.Make sure NodeJS is installed on your computer.
-3.Follow below steps, to get started.
+-1.Clone the Repository. 
+-2.Make sure NodeJS is installed on your computer.
+-3.Follow below steps, to get started.
 
 ## Getting Started
 
