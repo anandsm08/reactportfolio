@@ -90,7 +90,7 @@ export default function Home() {
 
         <section
           class="about-me"
-          className=" min-h-screen bg-gradient-to-b from-sky-100 to-sky-200 dark:bg-none"
+          className="min-h-screen bg-gradient-to-b from-sky-100 to-sky-200 dark:bg-none"
         >
           <div className="">
             <div className="flex justify-between">
