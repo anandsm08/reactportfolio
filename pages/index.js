@@ -19,6 +19,7 @@ import { useState } from "react";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -28,11 +29,11 @@ export default function Home() {
       </Head>
 
       <main className=" dark:bg-gradient-to-b from-dark1 to-dark6">
-        <section className="min-h-screen min-w-0 bg-gradient-to-b from-sky-50 to-sky-100 dark:bg-none ">
+        <section className="min-h-screen bg-gradient-to-b from-sky-50 to-sky-100 dark:bg-none ">
           <nav className="py-5 mb-10 flex justify-between dark:text-dark4 ">
             <h1 className=" text-lg ml-20 font-akira ">AM</h1>
             <ul className="  flex  mr-5 items-center ">
-              <li className="ml-4   text-md ">
+              <li className="ml-4 text-md ">
                 <AnchorLink href="#projects">Work</AnchorLink>
               </li>
               <li className=" ml-4 text-md ">
@@ -89,9 +90,10 @@ export default function Home() {
         </section>
 
         <section
-          class="about-me"
-          className="min-h-screen bg-gradient-to-b from-sky-100 to-sky-200 dark:bg-none"
-        >
+          
+          // style={{background: `linear-gradient(to bottom,  ${color1} 0%,${color2} 100%)`}}
+          id="about-me"
+          className="min-h-screen bg-gradient-to-b from-sky-100 to-sky-200 dark:bg-none">
           <div className="">
             <div className="flex justify-between">
               <div className="mx-10 justify-center dark:text-dark4">
