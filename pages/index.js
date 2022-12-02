@@ -3,7 +3,7 @@ import Head from "next/head";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { BsMoonStarsFill } from "react-icons/bs";
 import {
-  AiFillBehanceCircle,
+
   AiFillGithub,
   AiFillLinkedin,
   AiFillMail,
@@ -91,7 +91,6 @@ export default function Home() {
 
         <section
           
-          // style={{background: `linear-gradient(to bottom,  ${color1} 0%,${color2} 100%)`}}
           id="about-me"
           className="min-h-screen bg-gradient-to-b from-sky-100 to-sky-200 dark:bg-none">
           <div className="">
