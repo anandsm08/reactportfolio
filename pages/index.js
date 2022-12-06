@@ -31,7 +31,7 @@ export default function Home() {
       <main className=" dark:bg-gradient-to-b from-dark1 to-dark6">
         <section className="min-h-screen bg-gradient-to-b from-sky-50 to-sky-100 dark:bg-none ">
           <nav className="py-5 mb-10 flex justify-between dark:text-dark4 ">
-            <h1 className=" text-lg ml-20 font-akira ">AM</h1>
+            <h1 className=" text-lg ml-10 font-akira md:ml-20">AM</h1>
             <ul className="  flex  mr-5 items-center ">
               <li className="ml-4 text-md ">
                 <AnchorLink href="#projects">Work</AnchorLink>
@@ -49,7 +49,7 @@ export default function Home() {
             </ul>
           </nav>
 
-          <div className=" relative mx-auto  mt-44 py-20 h-80 w-80 justify-center">
+          <div className=" relative mx-auto  mt-24 py-20 h-64 w-64 justify-center md:mt-44 md:h-80 md:w-80">
             <Image
               src={hero}
               alt=""
@@ -90,49 +90,48 @@ export default function Home() {
         </section>
 
         <section
-          
           id="about-me"
           className="min-h-screen bg-gradient-to-b from-sky-100 to-sky-200 dark:bg-none">
           <div className="">
             <div className="flex justify-between">
               <div className="mx-10 justify-center dark:text-dark4">
-                <h2 className="text-4xl font-mono py-10 px-28 dark:text-light">
+                <h2 className="text-lg font-bold py-10 px-14 dark:text-light lg:text-4xl md:text-2xl md:px-28">
                   Who am I?
                 </h2>
-                <p className="text-xl font-medium  px-32">
+                <p className="text-md font-medium  px-16 md:text-xl md:px-32">
                   Namaste! Myself Anand Menon{" "}
                 </p>
-                <p className="text-xl font-medium ml-32">
+                <p className="text-md font-medium ml-16 md:text-xl md:ml-32">
                   I&apos;ve been learning, tinkering and exploring various
                   fields and would love to help the community by my
-                  contributions someday!.Also a HAM Radio Operator.{" "}
+                  contributions someday!,also a HAM Radio Operator
                 </p>
-                <p className="text-xl font-medium ml-32">
+                <p className="text-md font-medium ml-16 md:text-xl md:ml-32">
                   Working on Flutter/Dart, Kotlin,C/C++. Currently learning
                   Javascript,ReactJS,TailwindCSS to boost my development skills.{" "}
                 </p>
               </div>
             </div>
-            <div className=" font-mono py-10 px-28 ml-10 text-gray-800 font-semibold ">
-              <h2 className="text-2xl py-8 dark:text-light">When and Where</h2>
-              <h3 className="text-xl underline dark:text-emerald-200 ">
+            <div className=" font-mono py-10 px-16 ml-4 text-gray-800 font-semibold md:ml-10 md:px-28">
+              <h2 className="text-lg py-8 dark:text-light md:text-3xl">When and Where</h2>
+              <h3 className="text-md underline dark:text-emerald-200 md:text-2xl">
                 2020-2024
               </h3>
-              <ul className="text-xl ml-10 py-2 list-disc dark:text-dark4">
+              <ul className="text-md ml-10 py-2 list-disc dark:text-dark4 md:text-xl md:py-6">
                 <li>
                   Currently a Student at{" "}
                   <a href="https://www.pce.ac.in" rel="noreferer">
                     <strong>
-                      Pillai College of Engineerring(PCE),Navi Mumbai.
+                      Pillai College of Engineering(PCE),Navi Mumbai.
                     </strong>
                   </a>
                 </li>
                 <li>Tech at Google Developers Student Clubs,PCE (2022-23). </li>
               </ul>
-              <h3 className="text-xl underline dark:text-emerald-200">
+              <h3 className="text-md underline dark:text-emerald-200 md:text-2xl">
                 2018-2020
               </h3>
-              <ul className="text-xl ml-10 py-2 list-disc dark:text-dark4">
+              <ul className="text-md ml-10 py-2 list-disc dark:text-dark4 md:text-xl md:py-6">
                 <li>
                   Studied and completed my HSC from{" "}
                   <a href="https://www.abhinav.ac.in" rel="noreferer">
@@ -175,7 +174,7 @@ export default function Home() {
                   <div class="flex justify-end py-2 ">
                     <div class="my-2">
                       <div class="flex space-x-2 align-middle rounded-lg bg-white mr-4 dark:text-black">
-                        <a href="https://github.com/anandsm08/ExpenseTracker_Expensa">
+                        <a href="https://github.com/anandsm08/ExpenseTracker_Expensa" target="_blank" rel="noreferrer">
                           {" "}
                           <AiFillGithub className="h-8 w-8"></AiFillGithub>
                         </a>
@@ -208,7 +207,7 @@ export default function Home() {
                   <div class="flex justify-end py-2 ">
                     <div class="my-2">
                       <div class="flex space-x-2 align-middle rounded-lg bg-white mr-4 dark:text-black">
-                        <a href="https://github.com/anandsm08/ExpenseTracker_Expensa">
+                        <a href="https://github.com/anandsm08/reactportfolio" target="_blank" rel="noreferrer">
                           {" "}
                           <AiFillGithub className="h-8 w-8"></AiFillGithub>
                         </a>
@@ -242,7 +241,7 @@ export default function Home() {
                   <div class="flex justify-end py-2 ">
                     <div class="my-2">
                       <div class="flex space-x-2 align-middle rounded-lg bg-white mr-4 dark:text-black">
-                        <a href="https://github.com/anandsm08/ExpenseTracker_Expensa">
+                        <a href="https://github.com/anandsm08/ExpenseTracker_Expensa" target="_blank" rel="noreferrer">
                           {" "}
                           <AiFillGithub className="h-8 w-8"></AiFillGithub>
                         </a>
@@ -259,8 +258,8 @@ export default function Home() {
         </section>
         <footer className=" text-center  lg:text-left">
         <div className="text-gray-300 text-center text-lg p-6 bg-gradient-to-b from-sky-600 to-sky-800 dark:bg-none dark:text-light" >
-            © Copyright 2022, Developed by 
-            <a className="text-gray-100 font-semibold dark:text-emerald-300" href="#"> Anand Menon</a>
+            © Copyright 2022 
+            <p>Developed by<a className="text-gray-100 font-semibold dark:text-emerald-300" href="#"> Anand Menon</a></p>
         </div>
       </footer>
       </main>
