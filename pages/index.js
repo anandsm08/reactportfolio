@@ -14,7 +14,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 import Image from "next/image";
 import hero from "../public/yoo.png";
 import darkhero from "../public/sleeping.png";
-import resume from "../public/anand_resume.pdf";
+// import resume from "../public/anand_resume.pdf";
 
 import { useState } from "react";
 
@@ -38,7 +38,7 @@ export default function Home() {
                 <AnchorLink href="#projects">Work</AnchorLink>
               </li>
               <li className=" ml-4 text-md ">
-                <a download="" href={resume} target='_blank' rel="noreferrer">Resume</a>
+                <a  href="../public/anand_resume.pdf" download="anand_resume.pdf" target='_blank' rel="noreferrer">Resume</a>
               </li>
 
               <li className="ml-4 mr-4">
